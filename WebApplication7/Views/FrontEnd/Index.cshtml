@@ -1,0 +1,23 @@
+﻿@model List<WebApplication7.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+ <div class="w3-container w3-text-grey" id="jeans">
+            <p>8 items</p>
+        </div>
+<div class="w3-row w3-grayscale">
+    @foreach (var item in Model)
+    {
+        <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <img src="/w3images/@item.Photo" style="width:100%">
+                <p>@item.Name<br><b>@item.Price</b></p>
+                <input type="submit" name="name" value="Add To Cart" style="width:210px;" class="btn-danger" />
+            </div>
+        </div>
+    }
+</div>

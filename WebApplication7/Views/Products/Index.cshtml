@@ -1,0 +1,58 @@
+﻿@model List<Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Index</h2>
+@Html.ActionLink("Add New Product", "Add", null, new { @class = "btn-Default" })
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            @using (Html.BeginForm("Search", "Categories"))
+            {
+                <label>
+                    Search
+                </label>
+                <input type="text" name="keyword" value="" />
+                <input type="submit" name="name" value="Search" />
+            }
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @if (TempData["Message"] != null)
+            {
+                @TempData["Message"]
+            }
+            <table class="table table-bordered table-condensed table-responsive table-condensed">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Photo</th>
+                        <th>Detail</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@item.Price</td>
+                            <td><img src="~/images/@item.Photo" alt="Alternate Text"  height="100px" width="100px"/></td>
+                            <td>@item.Detail</td>
+                            <td> @Html.ActionLink("Edit", "Edit", new { Id = item.Id }) | @Html.ActionLink("Delete", "Delete", new { Id = item.Id }) </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>

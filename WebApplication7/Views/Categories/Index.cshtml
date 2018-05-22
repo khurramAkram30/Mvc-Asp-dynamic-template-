@@ -1,0 +1,52 @@
+﻿@model List<Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Index</h2>
+@Html.ActionLink("Add New Category", "Add", null, new { @class = "btn-Default" })
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            @using (Html.BeginForm("Search", "Categories"))
+            {
+                <label>
+                    Search
+                </label>
+                <input type="text" name="keyword" value="" />
+                <input type="submit" name="name" value="Search" />
+            }
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @if (TempData["Message"] != null)
+            {
+                @TempData["Message"]
+            }
+            <table class="table table-bordered table-condensed table-responsive table-condensed">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td> @Html.ActionLink("Edit", "Edit", new { Id = item.Id }) | @Html.ActionLink("Delete", "Delete", new { Id = item.Id }) </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>

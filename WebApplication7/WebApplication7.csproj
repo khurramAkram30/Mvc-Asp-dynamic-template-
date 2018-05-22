@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3AEE521-90FC-4987-B890-161934E35E98}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication7</RootNamespace>
+    <AssemblyName>WebApplication7</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\jeans.jpg" />
+    <Content Include="images\Lays.png" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\rBHvpRWBkgyW99dXT88n7yEAvth_LlrfE80CYdSH47w.woff2" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="template\blank.html" />
+    <Content Include="template\cards.html" />
+    <Content Include="template\charts.html" />
+    <Content Include="template\css\sb-admin.css" />
+    <Content Include="template\css\sb-admin.min.css" />
+    <Content Include="template\forgot-password.html" />
+    <Content Include="template\gulpfile.js" />
+    <Content Include="template\index.html" />
+    <Content Include="template\js\sb-admin-charts.js" />
+    <Content Include="template\js\sb-admin-charts.min.js" />
+    <Content Include="template\js\sb-admin-datatables.js" />
+    <Content Include="template\js\sb-admin-datatables.min.js" />
+    <Content Include="template\js\sb-admin.js" />
+    <Content Include="template\js\sb-admin.min.js" />
+    <Content Include="template\login.html" />
+    <Content Include="template\navbar.html" />
+    <Content Include="template\register.html" />
+    <Content Include="template\tables.html" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="template\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="template\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="template\vendor\chart.js\Chart.js" />
+    <Content Include="template\vendor\chart.js\Chart.min.js" />
+    <Content Include="template\vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="template\vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="template\vendor\datatables\jquery.dataTables.js" />
+    <Content Include="template\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="template\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="template\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="template\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="template\vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="template\vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="template\vendor\jquery\jquery.js" />
+    <Content Include="template\vendor\jquery\jquery.min.js" />
+    <Content Include="template\vendor\jquery\jquery.slim.js" />
+    <Content Include="template\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="w3css\font-awesome.min.css" />
+    <Content Include="w3css\montserrat.css" />
+    <Content Include="w3css\roboto.css" />
+    <Content Include="w3css\w3.css" />
+    <Content Include="w3images\jeans.jpg" />
+    <Content Include="w3images\jeans1.jpg" />
+    <Content Include="w3images\jeans2.jpg" />
+    <Content Include="w3images\jeans3.jpg" />
+    <Content Include="w3images\jeans4.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Categories\Index.cshtml" />
+    <EntityDeploy Include="ShoppingCartModel1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ShoppingCartModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ShoppingCartModel1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShoppingCartModel1.edmx</DependentUpon>
+      <LastGenOutput>ShoppingCartModel1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ShoppingCartModel1.edmx.diagram">
+      <DependentUpon>ShoppingCartModel1.edmx</DependentUpon>
+    </Content>
+    <Content Include="ShoppingCartModel1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShoppingCartModel1.edmx</DependentUpon>
+      <LastGenOutput>ShoppingCartModel1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Categories\Add.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Category.cs">
+      <DependentUpon>ShoppingCartModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\FrontEndController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>ShoppingCartModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_Result.cs">
+      <DependentUpon>ShoppingCartModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartModel1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingCartModel1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingCartModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartModel1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingCartModel1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>ShoppingCartModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserType.cs">
+      <DependentUpon>ShoppingCartModel1.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml">
+      <BrowseToURL>1</BrowseToURL>
+    </Content>
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Add.cshtml" />
+    <Content Include="template\.gitignore" />
+    <Content Include="template\.jsbeautifyrc" />
+    <Content Include="template\.travis.yml" />
+    <Content Include="template\LICENSE" />
+    <Content Include="template\package-lock.json" />
+    <Content Include="template\package.json" />
+    <Content Include="template\pug\blank.pug" />
+    <Content Include="template\pug\cards.pug" />
+    <Content Include="template\pug\charts.pug" />
+    <Content Include="template\pug\forgot-password.pug" />
+    <Content Include="template\pug\includes\css\core.pug" />
+    <Content Include="template\pug\includes\css\custom.pug" />
+    <Content Include="template\pug\includes\footer.pug" />
+    <Content Include="template\pug\includes\js\core.pug" />
+    <Content Include="template\pug\includes\js\custom.pug" />
+    <Content Include="template\pug\includes\modals\logout.pug" />
+    <Content Include="template\pug\includes\navbar.pug" />
+    <Content Include="template\pug\includes\scroll-to-top.pug" />
+    <Content Include="template\pug\index.pug" />
+    <Content Include="template\pug\login.pug" />
+    <Content Include="template\pug\navbar.pug" />
+    <Content Include="template\pug\register.pug" />
+    <Content Include="template\pug\tables.pug" />
+    <Content Include="template\README.md" />
+    <Content Include="template\scss\navbar\_navbar_colors.scss" />
+    <Content Include="template\scss\navbar\_navbar_fixed.scss" />
+    <Content Include="template\scss\navbar\_navbar_global.scss" />
+    <Content Include="template\scss\navbar\_navbar_static.scss" />
+    <Content Include="template\scss\navbar\_navbar_toggle.scss" />
+    <Content Include="template\scss\sb-admin.scss" />
+    <Content Include="template\scss\_cards.scss" />
+    <Content Include="template\scss\_footer.scss" />
+    <Content Include="template\scss\_global.scss" />
+    <Content Include="template\scss\_login.scss" />
+    <Content Include="template\scss\_mixins.scss" />
+    <Content Include="template\scss\_utilities.scss" />
+    <Content Include="template\scss\_variables.scss" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="template\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="template\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="template\vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="template\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="template\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="template\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="template\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="template\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="template\vendor\font-awesome\less\animated.less" />
+    <Content Include="template\vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="template\vendor\font-awesome\less\core.less" />
+    <Content Include="template\vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="template\vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="template\vendor\font-awesome\less\icons.less" />
+    <Content Include="template\vendor\font-awesome\less\larger.less" />
+    <Content Include="template\vendor\font-awesome\less\list.less" />
+    <Content Include="template\vendor\font-awesome\less\mixins.less" />
+    <Content Include="template\vendor\font-awesome\less\path.less" />
+    <Content Include="template\vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="template\vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="template\vendor\font-awesome\less\stacked.less" />
+    <Content Include="template\vendor\font-awesome\less\variables.less" />
+    <Content Include="template\vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_core.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_list.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_path.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="template\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="template\vendor\jquery\jquery.min.map" />
+    <Content Include="template\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Shared\Admin.cshtml" />
+    <Content Include="Views\Account\login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\FrontEnd\Index.cshtml" />
+    <Content Include="Views\FrontEnd\Getcategories.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Frontview\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28833</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:28833/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+﻿@model Product
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Add</h2>
+
+
+@using (Html.BeginForm("Add", "Products", FormMethod.Post, new { @class = "Form" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(f=> Model.Name)
+        @Html.TextBoxFor(f => Model.Name, new { @class = "form-control"})        
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(f => Model.Price)
+        @Html.TextBoxFor(f => Model.Price, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(f => Model.Photo)
+        @Html.TextBoxFor(f => Model.Photo, new { @class = "form-control", type="file"  })
+        @*<input type="file" name="name" value=" " />*@
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(f => Model.Detail)
+        @Html.TextBoxFor(f => Model.Detail, new { @class = "form-control" })
+
+
+    </div>
+
+
+    <input type="submit" class="btn-default" name="name" value="Add" />
+}
+
+
